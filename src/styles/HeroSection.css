@@ -1,0 +1,39 @@
+.heroSection{
+    padding-top: 0;
+    background-color: rgb(45, 40, 40);
+    height: 125vh;
+}
+
+.heroBackground{
+    background-image: url("../assets/images/bg-about.jpg");
+    width: 100vw;
+    height: 100vh;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(200, 180, 135);
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    color: rgb(200, 180, 135);
+}
+
+.logo{
+    background-image: url("../assets/images/logo.svg");
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 15vh;
+    position: absolute;
+    top: 108%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
