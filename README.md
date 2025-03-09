@@ -1,12 +1,52 @@
-# React + Vite
+## Installation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1.  Clone the repository:
 
-Currently, two official plugins are available:
+    ```bash
+    git clone https://github.com/MarekJuricko/mivart_assignment.git
+    cd mivart_assignment
+    ```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2.  Install dependencies:
 
-## Expanding the ESLint configuration
+    ```bash
+    npm install
+    ```
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3.  Start the development server:
+
+    ```bash
+    npm start
+    ```
+## Features
+
+* **Interactive menu**: A hidden menu that appears when you click on the icon. The menu automatically closes when you scroll the page.
+* **Company sections**: Information about Leonides, its offerings, and values.
+* **Contact form**: A form for users who want to contact the company.
+* **Interactive map**: A map with the company's headquarters marked.
+
+## Components
+
+* **Menu**: An interactive menu with items.
+* **HeroSection**: The introductory section with a title and logo.
+* **AboutSection**: A section with information about the company and images.
+* **ContactForm**: A contact form for users.
+* **InteractiveMap**: An interactive map with the company's headquarters marked.
+
+## Pages
+
+* **Main page**: Contains the introductory section, company information, contact form, and map.
+
+## Styling
+
+* `Menu.css`: Styles for the interactive menu.
+* `HeroSection.css`: Styles for the introductory section.
+* `AboutSection.css`: Styles for the company section.
+* `FormSection.css`: Styles for the contact form.
+
+## Technologies
+
+* **Frontend**: HTML, CSS, JavaScript (React)
+* **Framework**: React.js
+* **Version control**: Git and GitHub
+* **Maps**: React leaflet
