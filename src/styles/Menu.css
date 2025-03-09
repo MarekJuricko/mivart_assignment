@@ -1,0 +1,96 @@
+.menu-container {
+    position: relative;
+  }
+  
+  .menu-toggle {
+    position: fixed;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: none;
+    z-index: 1000;
+  }
+  
+  .menu {
+    position: fixed;
+    top: 0;
+    left: -50%;
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    transition: left 0.3s ease;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 999;
+  }
+  
+  .menu.open {
+    left: 0;
+  }
+  
+  .menu-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: none;
+  }
+  
+  .menu-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+  }
+  
+  .menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .menu-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+  }
+  
+  .menu-item img:hover {
+    filter: grayscale(0%);
+  }
+  
+  .menu-item span {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+  
+  .menu-item .item-number {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2px 5px;
+    border-radius: 3px;
+  }
+  
+  @media (max-width: 750px) {
+    .menu {
+      width: 100%; /* Zmena šírky na 100% */
+      left: -100%; /* Zmena počiatočnej pozície pre animáciu */
+    }
+  }

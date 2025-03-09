@@ -1,11 +1,9 @@
 import React from 'react'
 import "../styles/HeroSection.css"
-import Menu from './Menu'
 
 const HeroSection = () => {
   return (
-    <div className='heroSection'>
-        <Menu/>
+    <div className='heroSection'>       
         <div className='title'>
             <h1>Lorem ipsum dolor</h1>
         </div>
