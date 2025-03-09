@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import '../styles/Menu.css'; 
+import '../styles/Menu.css';
 import menuIcon from '../assets/images/menu.svg';
 import menuRotIcon from '../assets/images/menu-rot.svg';
 import menu01 from '../assets/assets/menu/menu-01.jpg';
@@ -10,18 +10,22 @@ import menu05 from '../assets/assets/menu/menu-05.jpg';
 import menu06 from '../assets/assets/menu/menu-06.jpg';
 
 const Menu = () => {
+  // State to manage menu open/close
   const [isOpen, setIsOpen] = useState(false);
 
+  // Function to toggle menu state
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  // Function to close menu on scroll
   const handleScroll = () => {
     if (isOpen) {
       setIsOpen(false);
     }
   };
 
+  // Effect to add/remove scroll event listener
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => {
@@ -29,6 +33,7 @@ const Menu = () => {
     };
   }, [isOpen]);
 
+  // Data for menu items
   const menuItems = [
     { image: menu01, text: 'O SPOLOČNOSTI' },
     { image: menu02, text: 'ČO PONÚKA LEONIDES?' },

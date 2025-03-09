@@ -1,10 +1,10 @@
 import React from 'react';
 import '../styles/AboutSection.css'; 
-
 import menuImage1 from '../assets/assets/menu/menu-about-1.jpg';
 import menuImage2 from '../assets/assets/menu/menu-about-2.jpg';
 import menuImage3 from '../assets/assets/menu/menu-about-3.jpg';
 
+// AboutSection component: Renders the about section with images and text.
 const AboutSection = () => {
   return (
     <div className="aboutSectionWrapper">

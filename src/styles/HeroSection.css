@@ -1,32 +1,37 @@
-.heroSection{
+/* Styles the main hero section container. */
+.heroSection {
     padding-top: 0;
     background-color: rgb(45, 40, 40);
     height: 125vh;
-}
-
-.heroBackground{
+  }
+  
+  /* Styles the background image for the hero section. */
+  .heroBackground {
     background-image: url("../assets/images/bg-about.jpg");
     width: 100vw;
     height: 100vh;
-}
-
-.menu{
+  }
+  
+  /* Styles the menu within the hero section. */
+  .menu {
     display: flex;
     justify-content: center;
     align-items: center;
     color: rgb(200, 180, 135);
-}
-
-.title{
+  }
+  
+  /* Styles the title text within the hero section. */
+  .title {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px;
     color: rgb(200, 180, 135);
-}
-
-.logo{
+  }
+  
+  /* Styles the logo image within the hero section. */
+  .logo {
     background-image: url("../assets/images/logo.svg");
     background-repeat: no-repeat;
     width: 100px;
@@ -36,4 +41,4 @@
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px;
-}
+  }

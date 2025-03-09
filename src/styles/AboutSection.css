@@ -65,6 +65,7 @@
     transition: filter 0.3s ease;
 }
 
+/* Image hover effect */
 .aboutContent img:hover {
     filter: grayscale(0%);
 }
@@ -78,6 +79,7 @@
     margin: 0 auto;
 }
 
+/* Paragraph text in the text section */
 .aboutContentText {
     font-size: 18px;
     color: black;
@@ -87,7 +89,7 @@
     padding: 0 10px;
 }
 
-/* Media query for smaller devices */
+/* Media query for smaller devices (screen width up to 768px) */
 @media screen and (max-width: 768px) {
     .aboutContent {
         gap: 10px;
@@ -111,6 +113,7 @@
     }
 }
 
+/* Media query for even smaller devices (screen width up to 480px) */
 @media screen and (max-width: 480px) {
     .aboutContent img {
         width: 60%;
