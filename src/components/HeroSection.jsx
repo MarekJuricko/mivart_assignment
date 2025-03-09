@@ -1,12 +1,11 @@
 import React from 'react'
 import "../styles/HeroSection.css"
+import Menu from './Menu'
 
 const HeroSection = () => {
   return (
     <div className='heroSection'>
-        <a href="" className='menu'> Menu
-            <img src="" alt=""/>
-        </a>
+        <Menu/>
         <div className='title'>
             <h1>Lorem ipsum dolor</h1>
         </div>
